@@ -1,13 +1,13 @@
 @import '../../varibals.scss';
 
 .header {
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .background1 {
         background-color: $background1;
-
-        .flex {
-            display: flex;
-            justify-content: space-between;
-        }
 
         .inline {
             display: flex;
@@ -38,9 +38,9 @@
     .background2 {
         background-color: $background2;
 
-        .flex {
-            display: flex;
-            justify-content: space-between;
+        .logo {
+            width: 100px;
+            height: 60px;
         }
     }
 
