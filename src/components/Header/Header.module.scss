@@ -1,0 +1,48 @@
+@import '../../varibals.scss';
+
+.header {
+    .background1 {
+        background-color: $background1;
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .inline {
+            display: flex;
+        }
+
+        button {
+            background-color: unset;
+            color: $white;
+            border: unset;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .divider::before {
+            margin: 5px;
+            display: block;
+
+            content: '';
+            width: 1px;
+            height: 12px;
+            background-color: rgb(255, 255, 255);
+        }
+    }
+
+    .background2 {
+        background-color: $background2;
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+
+}
