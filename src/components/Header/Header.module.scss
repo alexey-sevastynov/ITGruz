@@ -14,6 +14,7 @@
 
     .background1 {
         background-color: $background1;
+        z-index: 1;
 
         .inline {
             display: flex;
@@ -43,6 +44,7 @@
 
     .background2 {
         background-color: $background2;
+        z-index: 1;
 
         .flex {
             height: 85px;
