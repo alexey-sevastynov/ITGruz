@@ -1,0 +1,51 @@
+.promo {
+
+    position: relative;
+    min-height: 100vh;
+
+    background: url('../../../public/img/Promo.jpg') no-repeat 100% / cover;
+
+
+
+
+
+
+    .title {
+        position: absolute;
+        top: 180px;
+        left: 30px;
+
+        font-weight: bold;
+        font-style: normal;
+        font-size: 36px;
+        color: white;
+    }
+
+    .btn {
+        position: absolute;
+        top: 300px;
+        left: 30px;
+
+        text-align: center;
+        line-height: 38px;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 19px;
+        color: white;
+        width: 150px;
+        height: 40px;
+        background-color: #364D51;
+        border-radius: 7px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #232c2f;
+        }
+    }
+}
+
+@media(max-width: 1150px) {
+    .promo {
+        background-position: 30%;
+    }
+}

@@ -1,6 +1,12 @@
 @import '../../varibals.scss';
 
 .header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+
+
+
     .flex {
         display: flex;
         justify-content: space-between;
@@ -38,9 +44,128 @@
     .background2 {
         background-color: $background2;
 
+        .flex {
+            height: 85px;
+            align-items: center;
+        }
+
         .logo {
             width: 100px;
             height: 60px;
+            transform: scale(-1, 1);
+
+        }
+
+        .menu {
+
+            display: flex;
+
+
+            .servises {
+                color: $orange;
+
+                &:hover .popup {
+
+                    display: flex;
+                }
+
+
+            }
+
+
+
+
+            li {
+                padding: 5px 20px;
+                position: relative;
+
+                &:hover {
+                    background-color: $background1;
+                    border-radius: 7px;
+                    cursor: unset;
+
+                }
+
+
+
+                .popup {
+
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                    display: none;
+                    position: absolute;
+                    top: 30px;
+                    left: -300px;
+                    width: 600px;
+                    height: 400px;
+
+                    border-radius: 7px;
+                    z-index: 2;
+                    background-color: $background1;
+
+                    .moving {
+
+                        width: 300px;
+
+                        &:first-child {
+                            border-right: 2px solid #364d51;
+                        }
+
+                        .title {
+                            color: #364D51;
+                            line-height: 300%;
+                            padding-left: 20px;
+                            font-size: 14px;
+                        }
+
+                        .link {
+                            font-size: 12px;
+                            line-height: 250%;
+                            width: 250px;
+                            display: flex;
+                            padding-left: 25px;
+
+
+                            &:hover {
+                                background-color: #364D51;
+                                width: 300px;
+                            }
+                        }
+
+                    }
+
+
+
+                }
+
+
+            }
+
+        }
+
+        .mobile {
+            display: grid;
+            justify-content: space-between;
+            grid-template-columns: 28px 150px;
+            grid-template-rows: 28px 28px;
+            gap: 5px;
+
+            .number {
+                align-self: center;
+                justify-self: end;
+                font-size: 20px;
+            }
+        }
+
+        @media(max-width: 750px) {
+            .menu {
+                display: none;
+            }
+
+            .mobile {
+                display: none;
+            }
+
         }
     }
 

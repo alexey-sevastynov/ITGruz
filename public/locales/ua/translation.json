@@ -6,11 +6,27 @@
         "ru": "РУС",
         "en": "ENG"
     },
-
     "menu": {
         "autopark": "Автопарк",
         "price": "Ціни",
         "servises": "Послуги",
-        "contacts": "Контакти"
+        "contacts": "Контакти",
+        "title1": "Переїзди",
+        "apartmentMove": "Квартирний переїзд",
+        "officeMove": "Офісний переїзд",
+        "countryMove": "Дачний переїзд",
+        "title2": "Перевезення",
+        "truckers": "Вантажники",
+        "cargoTaxi": "Вантажне таксі",
+        "transportationOfFurniture": "Перевезення меблів",
+        "transportationOfThings": "Перевезення речей",
+        "transportBuilding": "Перевезення будматеріалів",
+        "transportTechnics": "Перевезення побутової техніки"
+    },
+    "promo": {
+        "title1": "Вантажні перевезення",
+        "title2": "у Дніпрі",
+        "btn": "Замовити",
+        "language": "вибери мову"
     }
 }

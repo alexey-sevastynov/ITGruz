@@ -5,5 +5,28 @@
         "ua": "УКР",
         "ru": "РУС",
         "en": "ENG"
+    },
+    "menu": {
+        "autopark": "Автопарк",
+        "price": "Цены",
+        "servises": "Услуги",
+        "contacts": "Контакты",
+        "title1": "Переезды",
+        "apartmentMove": "Квартирный переезд",
+        "officeMove": "Офисный переезд",
+        "countryMove": "Дачный переезд",
+        "title2": "Перевозки",
+        "truckers": "Грузчики",
+        "cargoTaxi": "Грузоаое такси",
+        "transportationOfFurniture": "Перевозка мебели",
+        "transportationOfThings": "Перевозка вещей",
+        "transportBuilding": "Перевозка стройматериалов",
+        "transportTechnics": "Перевозка бытовой техники"
+    },
+    "promo": {
+        "title1": "Грузовые перевозки",
+        "title2": "в Днепре",
+        "btn": "Заказать",
+        "language": "выбери язык"
     }
 }

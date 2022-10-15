@@ -5,6 +5,28 @@
         "ua": "UKR",
         "ru": "RUS",
         "en": "ENG"
+    },
+    "menu": {
+        "autopark": "autopark",
+        "price": "price",
+        "servises": "servises",
+        "contacts": "contacts",
+        "title1": "Moves",
+        "apartmentMove": "Apartment Move",
+        "officeMove": "Office Move",
+        "countryMove": "Country Move",
+        "title2": "Transportation",
+        "truckers": "Truckers",
+        "cargoTaxi": "Cargo Taxi",
+        "transportationOfFurniture": "Transportation of furniture",
+        "transportationOfThings": "Transportation of things",
+        "transportBuilding": "Transportation of building materials",
+        "transportTechnics": "Transportation of household appliances"
+    },
+    "promo": {
+        "title1": "Freight transportation",
+        "title2": "in Dnipro",
+        "btn": "Order",
+        "language": "choose a language"
     }
-    
 }
