@@ -21,7 +21,7 @@ function Header() {
                 <div className="container">
                     <div className={styles.flex}>
                         <div className="header__city">{t("header.city")}</div>
-                        <div className="header__schedule ">{t("header.schedule")}</div>
+                        <div className={styles.schedule}>{t("header.schedule")}</div>
                         <div className={styles.inline}>
                             <button onClick={() => changeLanguage('ua')} >{t("header.ua")}</button>
                             <span className={styles.divider}></span>
@@ -40,6 +40,10 @@ function Header() {
                             src="../icon/logo.png"
                             alt="logo"
                             className={styles.logo} />
+
+                        <div class={styles.burger}>
+                            <span></span>
+                        </div>
 
                         <nav className="hat__menu menu">
                             <ul className={styles.menu}>
