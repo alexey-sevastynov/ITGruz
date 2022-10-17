@@ -190,9 +190,6 @@
                     }
                 }
 
-
-
-
                 li {
                     width: 100px;
                     margin: 10px 0;
@@ -203,6 +200,18 @@
                         background-color: unset;
                         border-radius: 7px;
                         cursor: unset;
+                    }
+
+                    .arrow {
+                        margin-left: 10px;
+                        display: inline-block;
+                        width: 0;
+                        height: 0;
+
+
+                        border-left: 10px solid $background2;
+                        border-bottom: 5px solid transparent;
+                        border-top: 5px solid transparent;
                     }
 
                     .popup {
