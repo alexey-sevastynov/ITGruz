@@ -1,13 +1,19 @@
 import React from "react";
+import { useRef } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import '../../i18next'
+
 
 import styles from './Header.module.scss';
 
 
 
+
 function Header() {
 
+    const burgerRef = useRef();
+    const [openPopupBurger, setOpenPopupButrger] = useState(false);
 
     const { t, i18n } = useTranslation();
 
@@ -15,8 +21,15 @@ function Header() {
         i18n.changeLanguage(language);
     }
 
+    const ckickBtnBurger = () => {
+        setOpenPopupButrger(!openPopupBurger);
+        burgerRef.current.classList.toggle(`${`${styles.active}`}`)
+    }
+
     return (
         <section className={styles.header}>
+
+
             <div className={styles.background1}>
                 <div className="container">
                     <div className={styles.flex}>
@@ -41,11 +54,15 @@ function Header() {
                             alt="logo"
                             className={styles.logo} />
 
-                        <div class={styles.burger}>
-                            <span></span>
+                        <div
+                            ref={burgerRef}
+                            onClick={() => ckickBtnBurger()}
+                            class={styles.burger}>
+                            <span>
+                            </span>
                         </div>
 
-                        <nav className="hat__menu menu">
+                        {openPopupBurger && <nav className="hat__menu menu">
                             <ul className={styles.menu}>
                                 <li>
                                     <a href="#" className="menu__link">{t("menu.autopark")}</a>
@@ -57,8 +74,9 @@ function Header() {
 
                                     <a href="#" >{t("menu.servises")}</a>
 
-                                    {/* <spam className="menu__arrow"></spam> */}
+                                    <spam className={styles.arrow}></spam>
                                     <nav className={styles.popup}>
+
                                         <div className={styles.moving}>
                                             <div className={styles.title}>{t("menu.title1")}</div>
                                             <a href="#" className={styles.link}>{t("menu.apartmentMove")}</a>
@@ -80,7 +98,7 @@ function Header() {
                                     <a href="#" className="menu__link">{t("menu.contacts")}</a>
                                 </li>
                             </ul>
-                        </nav>
+                        </nav>}
                         <div className={styles.mobile}>
                             <a href="viber://chat?number=%2B380974211929" className="mobile__vieber">
                                 <svg width="30px" height="30px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" >
