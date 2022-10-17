@@ -14,8 +14,6 @@ function App() {
       <Promo />
       <Translation />
       <Header />
-
-
     </div>
   );
 

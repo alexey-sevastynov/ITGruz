@@ -12,7 +12,7 @@ import styles from './Header.module.scss';
 
 function Header() {
 
-    const burgerRef = useRef();
+
     const [openPopupBurger, setOpenPopupButrger] = useState(false);
 
     const { t, i18n } = useTranslation();
@@ -23,7 +23,6 @@ function Header() {
 
     const ckickBtnBurger = () => {
         setOpenPopupButrger(!openPopupBurger);
-        burgerRef.current.classList.toggle(`${`${styles.active}`}`)
     }
 
     return (
@@ -55,15 +54,14 @@ function Header() {
                             className={styles.logo} />
 
                         <div
-                            ref={burgerRef}
                             onClick={() => ckickBtnBurger()}
-                            class={styles.burger}>
-                            <span>
-                            </span>
+                            className={openPopupBurger ? [styles.burger, styles.active].join(' ') : [styles.burger]}>
+                            <span></span>
                         </div>
 
-                        {openPopupBurger && <nav className="hat__menu menu">
-                            <ul className={styles.menu}>
+
+                        <nav className="hat__menu menu">
+                            <ul className={openPopupBurger ? [styles.menu, styles.active].join(' ') : [styles.menu]}>
                                 <li>
                                     <a href="#" className="menu__link">{t("menu.autopark")}</a>
                                 </li>
@@ -98,7 +96,7 @@ function Header() {
                                     <a href="#" className="menu__link">{t("menu.contacts")}</a>
                                 </li>
                             </ul>
-                        </nav>}
+                        </nav>
                         <div className={styles.mobile}>
                             <a href="viber://chat?number=%2B380974211929" className="mobile__vieber">
                                 <svg width="30px" height="30px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" >
