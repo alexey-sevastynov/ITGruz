@@ -3,7 +3,6 @@ import { useContext } from "react";
 import { MyContext } from "../../App";
 
 import { useTranslation } from "react-i18next";
-
 import '../../i18next'
 
 import styles from './Promo.module.scss';

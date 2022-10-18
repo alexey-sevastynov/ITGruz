@@ -141,6 +141,10 @@
 
         }
 
+        .burger {
+            display: none;
+        }
+
         .mobile {
             display: grid;
             justify-content: space-between;
@@ -279,6 +283,7 @@
             }
 
             .burger {
+                display: block;
                 right: 10px;
                 position: absolute;
                 width: 30px;

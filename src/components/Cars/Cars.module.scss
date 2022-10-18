@@ -1,0 +1,138 @@
+.car {
+    .title {
+        margin-top: 100px;
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .car__wrapper {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+
+
+
+
+
+        .car__section {
+            display: grid;
+            grid-template-rows: 193px 36px 30px 30px 50px 45px 1fr;
+            box-shadow: 0px 0px 5px #000000;
+            border-radius: 7px;
+            transition: all 1s ease 0s;
+
+            .section__photo {
+                padding: 0;
+                height: 186px;
+                width: 100%;
+
+            }
+
+            .section__photo img {
+                height: 100%;
+                padding: 7px 7px 0px 7px;
+            }
+
+            .section__title {
+                padding-left: 7px;
+                height: 36px;
+                line-height: 34px;
+                background-color: #364D51;
+                color: white;
+                font-size: 19px;
+            }
+
+            .section__price {
+                height: 30px;
+                line-height: 30px;
+                margin: 0px 7px;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #364D51;
+
+                .section__price_text {
+                    font-size: 20px;
+                }
+
+                .section__price_text span {
+                    font-size: 12px;
+                }
+
+            }
+
+            .section__description_flex {
+                height: 30px;
+                display: flex;
+                justify-content: space-between;
+                margin: 0 7px;
+                font-size: 14px;
+                line-height: 30px;
+                font-weight: bold;
+                font-style: normal;
+            }
+
+            .section__description_grid {
+                line-height: 20px;
+                font-size: 14px;
+                margin: 0 7px;
+                display: grid;
+                grid-template-columns: 1fr 0.4fr 1fr 0.4fr;
+                grid-template-rows: 1fr 1fr;
+                column-gap: 10px;
+                border-bottom: 1px solid #364D51;
+
+                .section__description_num {
+                    justify-self: center;
+                }
+            }
+
+            .section__minimal {
+                line-height: 45px;
+                font-size: 14px;
+                margin: 0 7px;
+            }
+
+            .section__btn {
+                margin: 0 auto;
+                margin-top: 15px;
+                margin-bottom: 37px;
+            }
+
+
+        }
+
+
+
+    }
+}
+
+
+@media(max-width: 715px) {
+    .car {
+        .car__wrapper {
+            justify-content: center;
+
+        }
+
+        .title {
+            margin-top: 75px;
+            font-size: 32px;
+            text-align: center;
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+

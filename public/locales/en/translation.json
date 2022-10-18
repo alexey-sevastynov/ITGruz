@@ -28,5 +28,30 @@
         "title2": "in Dnipro",
         "btn": "Order",
         "language": "choose a language"
+    },
+    "callback": {
+        "title": "Call back",
+        "complet1": "Very wonderful!",
+        "complet2": "We will call you back",
+        "complet3": "to this number.",
+        "btn": "Call me",
+        "copyright1": " By clicking the 'Call me' button, you agree",
+        "copyright2": "processing of your personal data",
+        "placeholder": "Your phone number"
+    },
+    "car": {
+        "title": "Trucks",
+        "tariff": "tariff",
+        "price": "uah/hour",
+        "weightText": "carrying capacity",
+        "kilograms": "kg",
+        "lengthText": "length",
+        "widthText": "width",
+        "heightText": "height",
+        "squareText": "square",
+        "minimal": "minimum order:",
+        "clock": "hours",
+        "metrs": "m",
+        "btn": "Order"
     }
 }

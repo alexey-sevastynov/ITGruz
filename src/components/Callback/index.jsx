@@ -3,6 +3,9 @@ import { useState, useContext } from 'react';
 import { MyContext } from "../../App";
 import axios from 'axios';
 
+import { useTranslation } from "react-i18next";
+import '../../i18next'
+
 
 
 
@@ -12,6 +15,8 @@ function Callback() {
 
     const [tel, setTel] = useState('');
     const [modalActive, setModalActive] = useState(false);
+
+    const { t } = useTranslation();
 
 
     const TOKEN = '5633139025:AAHDghDftlYUF74VwJ7MDesIGflyPZEf2q4';
@@ -49,50 +54,46 @@ function Callback() {
 
 
     return (
-        <div class={styles.promo__form} >
-            <div class={styles.callback__wrapper}>
+        <div className={styles.promo__form} >
+            <div className={styles.callback__wrapper}>
                 <form id="bot" action="#">
 
-                    <div class="d-flex">
-                        <div class={styles.callback__title}>Обратный звонок</div>
+                    <div className="d-flex">
+                        <div className={styles.callback__title}>{t("callback.title")}</div>
 
                         <div
-                            class={styles.callback__close}
+                            className={styles.callback__close}
                             onClick={() => setCallBack(!callBack)}
                         ></div>
                     </div>
 
-                    {modalActive && <div class="complet complet-none">
-                        <div class={styles.callback__wrapper}>
-                            <h4 class={styles.complet}>Дуже чудово!<br /><br />Ми Вам перезвонимо,<br /> на цей номер.</h4>
+                    {modalActive && <div className="complet complet-none">
+                        <div className={styles.callback__wrapper}>
+                            <h4 className={styles.complet}>{t("callback.complet1")}<br /><br />{t("callback.complet2")}<br />{t("callback.complet3")}</h4>
                         </div>
                     </div>}
 
 
-                    <div class={styles.calback__flex}>
+                    <div className={styles.calback__flex}>
                         <input
-                            class={styles.callback__phone}
+                            className={styles.callback__phone}
                             type="phone"
                             id="tel"
-                            placeholder="Ваш номер телефона"
+                            placeholder={t("callback.placeholder")}
                             name="phone"
-                            inputmode="text"
                             value={tel}
                             onChange={(e) => setTel(e.target.value)} />
 
                         <button
-                            class={styles.callback__btn}
+                            className={styles.callback__btn}
                             onClick={onSubmit}
-                            name='tel'
-                            placeholder='Телефон'
-                            type="tel"
-                        >Позвоните мне</button>
+                        >{t("callback.btn")}</button>
 
                     </div>
 
-                    <div class={styles.callback__text}>
-                        Нажимая кнопку «Позвоните мне», вы соглашаетесь<br />
-                        <a href="index-polition.html" target="_blank"> на обработку ваших персональных данных</a>
+                    <div className={styles.callback__text}>
+                        {t("callback.copyright1")}<br />
+                        <a href="index-polition.html" target="_blank">{t("callback.copyright2")}</a>
                     </div>
 
                 </form>

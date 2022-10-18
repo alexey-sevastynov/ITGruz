@@ -72,7 +72,7 @@ function Header() {
 
                                     <a href="#" >{t("menu.servises")}</a>
 
-                                    <spam className={styles.arrow}></spam>
+                                    <span className={styles.arrow}></span>
                                     <nav className={styles.popup}>
 
                                         <div className={styles.moving}>

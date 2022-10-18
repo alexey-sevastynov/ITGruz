@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Promo from './components/Promo';
 import Translation from './components/Translation';
 import Callback from './components/Callback';
+import Cars from './components/Cars';
 
 import './App.scss';
 import { useState, createContext } from 'react';
@@ -21,9 +22,9 @@ function App() {
         <Promo />
         <Translation />
         <Header />
+
+        <Cars />
       </MyContext.Provider>
-
-
 
     </div>
   );
